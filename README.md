@@ -1,15 +1,48 @@
 # scala
-Practical No.1
+Practical No.1:
+Install Scala and SBT environment and write a simple Scala program to display output.
 
+Practical No.2
+Aim: Write programs using variables, data types, and operators to perform simple arithmetic operations.
+
+Practical No.3
+Aim: Write a Scala program to calculate mean, median, and mode for a given dataset.
+
+Practical No.4
+Aim: Write a Scala program to compute variance and standard deviation for a list of numbers.
+
+Practical No.5
+Aim: Create Breeze vectors and perform operations such as sum, mean, and dot product.
+
+Practical No.6
+AIM:-Create Breeze matrices and perform operations such as transpose and determinant.
+
+Practical No.7
+Aim: Write a Scala program to read a CSV dataset and compute basic statistics.
+
+Practical No.8
+Aim: Generate a scatter plot or histogram for a dataset using Scala visualization libraries.
+
+Practical No.9
+Aim: Implement a Simple Linear Regression Model using Scala/Breeze.
+
+
+=========================================================================================================================================================================================
+Practical No.1
+Aim: Install Scala and SBT environment and write a simple Scala program to display output.
+
+Code:
 object hello{
     def main(arg: Array[String]): Unit = {
         println("Welcome to SYDS!!!")
     }
 }
 
-=============================================================================================================
+=======================================================================================================================================================================================
 Practical no.2
+Aim: Write programs using variables, data types, and operators to perform simple arithmetic operations.
 
+Code:
 object maths {
     def main(args: Array[String]): Unit = {
         val a: Int = 20
@@ -32,9 +65,11 @@ object maths {
     }
 }
 
-=============================================================================================================
+====================================================================================================================================================================================
 Practical No.3
+Aim: Write a Scala program to calculate mean, median, and mode for a given dataset.
 
+code:
 object stat {
     def main(args: Array[String]): Unit = {
         val data = Array(10, 20, 30, 20, 40)
@@ -49,9 +84,11 @@ object stat {
     }
 }
 
-=============================================================================================================
+==================================================================================================================================================================================
 Practical No.4
+Aim: Write a Scala program to compute variance and standard deviation for a list of numbers.
 
+Code:
 object variance {
     def main(args: Array[String]): Unit = {
         val data = Array(10, 20, 30, 40, 50)
@@ -65,9 +102,12 @@ object variance {
     }
 }
 
-=============================================================================================================
+=============================================================================================================================================================================
 Practical no.5
+Aim: Create Breeze vectors and perform operations such as sum, mean, and dot product.
 
+Code:
+------------------------------------------------------------------------
 write this code in "built.sbt" file:
 val scala3Version = "3.8.4"
 
@@ -83,6 +123,7 @@ lazy val root = project
     libraryDependencies += "org.scalanlp" %% "breeze" % "2.1.0"
   )
 
+--------------------------------------------------------------------------
 This is main file "breeze.scala":
 
 import breeze.linalg._
@@ -104,9 +145,12 @@ object breeza{
     }
 }
 
-=============================================================================================================
+=======================================================================================================================================================================================
 Practical no.6
+AIM:-Create Breeze matrices and perform operations such as transpose and determinant.
 
+Code:
+---------------------------------------------------------------------------------
 write this code in "built.sbt" file:
 val scala3Version = "3.8.4"
 
@@ -122,6 +166,7 @@ lazy val root = project
     libraryDependencies += "org.scalanlp" %% "breeze" % "2.1.0"
   )
 
+-------------------------------------------------------------------------------
 This is main file "BreezeMatrix.scala":
 import breeze.linalg._
 
@@ -142,7 +187,10 @@ object BreezeMatrix {
 
 ==============================================================================================================================
 Practical no.7
+Aim: Write a Scala program to read a CSV dataset and compute basic statistics.
 
+Code:
+------------------------------------------------------------------------------------------
 first create file named "data.csv" in VS code Explorer and add values. Note:(create csv file outside of any folder) :-
 Marks
 75
@@ -155,7 +203,7 @@ Marks
 88
 64
 79
-
+-----------------------------------------------------------------------------------------------
 this is the main file "csvstatistics":
 import scala.io.Source
 
@@ -180,7 +228,10 @@ object CSVStatistics {
 
 =============================================================================================================
 Practical no.8
+Aim: Generate a scatter plot or histogram for a dataset using Scala visualization libraries.
 
+Code:
+------------------------------------------------
 write this code in "built.sbt" file:
 val scala3Version = "3.8.4"
 
@@ -196,6 +247,7 @@ lazy val root = project
     libraryDependencies ++= Seq("org.scalanlp" %% "breeze" % "2.1.0",
     "org.scalanlp" %% "breeze-viz" % "2.1.0")
   )
+------------------------------------------------
 
 This is main file :
 
@@ -234,7 +286,10 @@ object DataVisualization {
 
 =============================================================================================================
 Practical no.9
+Aim: Implement a Simple Linear Regression Model using Scala/Breeze.
 
+Code:
+-----------------------------------------------------------
 write this code in "built.sbt" file:
 val scala3Version = "3.8.4"
 
@@ -250,6 +305,7 @@ lazy val root = project
     libraryDependencies ++= Seq("org.scalanlp" %% "breeze" % "2.1.0",
     "org.scalanlp" %% "breeze-viz" % "2.1.0")
   )
+-----------------------------------------------------------------------
 
 This is main file :
 
